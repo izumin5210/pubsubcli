@@ -21,7 +21,7 @@ jobs:
         go mod download
 
     - name: Build
-      uses: izumin5210/actions-go-crossbuild@v1
+      uses: izumin5210/actions-go-crossbuild@releases/v1
       with:
         package: ./cmd/pubsubcli
 
