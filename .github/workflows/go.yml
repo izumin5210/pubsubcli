@@ -23,7 +23,6 @@ jobs:
     - name: Build
       uses: izumin5210/actions-go-crossbuild@master
       with:
-        name: pubsubcli
         package: ./cmd/pubsubcli
 
     - uses: actions/upload-artifact@master
