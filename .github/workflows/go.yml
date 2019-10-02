@@ -29,3 +29,11 @@ jobs:
       with:
         name: pubsubcli
         path: dist
+
+    - name: Nightly release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: './dist/*'
+        prerelease: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
